@@ -25,7 +25,7 @@ class BaseShape:
 
     def has_next_move(self, grid):
         for point in self.coordinates.values():
-            if grid[point.x][point.y - 1] == "*":
+            if grid[point.y - 1][point.x] == "*":
                 return False
         return True
 
@@ -33,15 +33,15 @@ class BaseShape:
         new_coordinates = {}
         for name, point in self.coordinates.items():
             if direction == 'down':
-                if grid[point.x][point.y - 1] == "*":
+                if grid[point.y - 1][point.x] == "*":
                     raise WrongMove
                 new_coordinates[name] = Point(point.x, point.y - 1)
             if direction == 'left':
-                if grid[point.x - 1][point.y] == "*":
+                if grid[point.y][point.x - 1] == "*":
                     raise WrongMove
                 new_coordinates[name] = Point(point.x - 1, point.y)
             if direction == 'right':
-                if grid[point.x + 1][point.y] == "*":
+                if grid[point.y][point.x + 1] == "*":
                     raise WrongMove
                 new_coordinates[name] = Point(point.x + 1, point.y)
         self.coordinates = new_coordinates

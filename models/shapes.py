@@ -35,7 +35,9 @@ class BaseShape:
 
     def has_next_move(self, grid):
         for point in self.coordinates.values():
-            if grid[point.y - 1][point.x] == "*":
+            try:
+                point.move_point(grid, point.x, point.y - 1)
+            except WrongMove:
                 return False
         return True
 

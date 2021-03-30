@@ -1,20 +1,6 @@
-# BaseCase Programming Test
+# Tetris
 
-You have 9hrs to implement the following game. In order of importance, we are interested in:
-    1. full, bug-free implementation of the spec
-    2. elegance of the code
-    3. time to completion
 
-Note on the ’elegance of the code’ - this includes the following:
-    1. Clear, sensible abstractions
-    2. Short and precise code (though - not so terse as to inhibit readibility)
-    3. No redundancies
-
-When you are done, please send us the full source code and appropriate build instructions. It is important to reply
-to the same email that contained this test. Note that in the event that you do not pass this test, we will not be
-able to provide any feedback on the reason.
-
-Tetris
 Implement a simple ‘text-mode’ version of the ‘Tetris’ game, following the specification below. Please don’t go
 outside of the specification, adding features not explicitly requested. You are free to use a language of your choice.
 There are 5 pieces In this version of Tetris:

@@ -1,11 +1,8 @@
-# Tetris
+# Tetris - Recruitment Task
 
-
-Implement a simple ‘text-mode’ version of the ‘Tetris’ game, following the specification below. Please don’t go
-outside of the specification, adding features not explicitly requested. You are free to use a language of your choice.
 There are 5 pieces In this version of Tetris:
 
-```
+```shell
 ****
  
 *
@@ -24,8 +21,9 @@ There are 5 pieces In this version of Tetris:
 **
 ```
 
-and they fall down a 20x20 tetris board:
-```
+...and they fall down a 20x20 tetris board:
+
+```shell
 *                 *
 *                 *
 *                 *
@@ -48,6 +46,7 @@ and they fall down a 20x20 tetris board:
 *                 *
 *******************
 ```
+
 The game starts with a random piece appearing at the top of the board. The user is then prompted to make a move:
 
 • a (return): move piece left
@@ -60,7 +59,3 @@ If the move user selects is valid, then it is executed and the screen redrawn (y
 A valid move is defined thus: The piece is altered as per the user’s input, and then displaced by 1 row downwards. If the piece, drawn at it’s new location, is not outside the bounds of the board, and does not overlap any pieces that previously fell, then it is a valid move.
 
 If the piece’s new position is such that it allows no valid move, then a new piece appears along the top of the board, randomly positioned along the x-axis. If this new piece happens offer no valid move, then the game is over and the program exits.
-
-If you feel some part of this spec is unclear/contradictory in some detail, please resolve it using your best judgement, and make a note explaining your decision.
-
-Good Luck!
